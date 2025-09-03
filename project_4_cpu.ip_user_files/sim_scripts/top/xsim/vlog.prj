@@ -1,0 +1,9 @@
+verilog xil_defaultlib  \
+"../../../bd/top/ip/top_cputop_0_0_1/sim/top_cputop_0_0.v" \
+"../../../bd/top/ip/top_led_driver_0_0_1/sim/top_led_driver_0_0.v" \
+"../../../bd/top/sim/top.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

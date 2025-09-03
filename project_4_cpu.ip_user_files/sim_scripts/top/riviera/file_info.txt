@@ -1,0 +1,6 @@
+xpm_memory.sv,systemverilog,xpm,../../../../../../../../../Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../../Xilinx/Vivado/2024.1/data/ip/xpm/xpm_VCOMP.vhd,
+top_cputop_0_0.v,verilog,xil_defaultlib,../../../bd/top/ip/top_cputop_0_0_1/sim/top_cputop_0_0.v,
+top_led_driver_0_0.v,verilog,xil_defaultlib,../../../bd/top/ip/top_led_driver_0_0_1/sim/top_led_driver_0_0.v,
+top.v,verilog,xil_defaultlib,../../../bd/top/sim/top.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

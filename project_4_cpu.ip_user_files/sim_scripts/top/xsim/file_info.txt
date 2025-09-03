@@ -1,0 +1,4 @@
+top_cputop_0_0.v,verilog,xil_defaultlib,../../../bd/top/ip/top_cputop_0_0_1/sim/top_cputop_0_0.v,
+top_led_driver_0_0.v,verilog,xil_defaultlib,../../../bd/top/ip/top_led_driver_0_0_1/sim/top_led_driver_0_0.v,
+top.v,verilog,xil_defaultlib,../../../bd/top/sim/top.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
