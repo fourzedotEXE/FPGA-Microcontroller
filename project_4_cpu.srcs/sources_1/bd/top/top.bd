@@ -1,0 +1,418 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE63FC1E99F6E784D",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../project_4_cpu.gen/sources_1/bd/top",
+      "name": "top",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.1.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "led_driver_0": "",
+      "cputop_0": ""
+    },
+    "ports": {
+      "CLK100MHZ": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "BTNR",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "top_CLK100MHZ",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "BTNR": {
+        "direction": "I"
+      },
+      "SW": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "AN": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "CA": {
+        "direction": "O"
+      },
+      "CB": {
+        "direction": "O"
+      },
+      "CC": {
+        "direction": "O"
+      },
+      "CD": {
+        "direction": "O"
+      },
+      "CE": {
+        "direction": "O"
+      },
+      "CF": {
+        "direction": "O"
+      },
+      "CG": {
+        "direction": "O"
+      },
+      "DP": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "led_driver_0": {
+        "vlnv": "xilinx.com:module_ref:led_driver:1.0",
+        "ip_revision": "1",
+        "xci_name": "top_led_driver_0_0",
+        "xci_path": "ip\\top_led_driver_0_0_1\\top_led_driver_0_0.xci",
+        "inst_hier_path": "led_driver_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "led_driver",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "top_CLK100MHZ",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "inst": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "an": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "ca": {
+            "direction": "O"
+          },
+          "cb": {
+            "direction": "O"
+          },
+          "cc": {
+            "direction": "O"
+          },
+          "cd": {
+            "direction": "O"
+          },
+          "ce": {
+            "direction": "O"
+          },
+          "cf": {
+            "direction": "O"
+          },
+          "cg": {
+            "direction": "O"
+          },
+          "dp": {
+            "direction": "O"
+          }
+        }
+      },
+      "cputop_0": {
+        "vlnv": "xilinx.com:module_ref:cputop:1.0",
+        "ip_revision": "1",
+        "xci_name": "top_cputop_0_1",
+        "xci_path": "ip\\top_cputop_0_1\\top_cputop_0_1.xci",
+        "inst_hier_path": "cputop_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "cputop",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "top_CLK100MHZ",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "BTNR": {
+            "direction": "I"
+          },
+          "SW": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "data_o": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "pc": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "jump": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "inc_x": {
+            "direction": "O"
+          },
+          "jump_x": {
+            "direction": "O"
+          },
+          "call_x": {
+            "direction": "O"
+          },
+          "ret_x": {
+            "direction": "O"
+          },
+          "opcode_x": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "c_x": {
+            "direction": "O"
+          },
+          "z_x": {
+            "direction": "O"
+          },
+          "n_x": {
+            "direction": "O"
+          },
+          "rda_x": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "rdb_x": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "wr_addr_x": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "wr_data_x": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "reg_file": {
+            "direction": "O"
+          },
+          "rd_x": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "rr_x": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "alu_x": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "datamem_x": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "datamem": {
+            "direction": "O"
+          },
+          "idle_flag": {
+            "direction": "O"
+          },
+          "fetch_flag": {
+            "direction": "O"
+          },
+          "decode_flag": {
+            "direction": "O"
+          },
+          "loadfsm_flag": {
+            "direction": "O"
+          },
+          "execute_flag": {
+            "direction": "O"
+          },
+          "write_flag": {
+            "direction": "O"
+          },
+          "advance_flag": {
+            "direction": "O"
+          },
+          "advance2_flag": {
+            "direction": "O"
+          },
+          "terminate_flag": {
+            "direction": "O"
+          },
+          "clk_count": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "LD_flag": {
+            "direction": "O"
+          },
+          "ALU_flag": {
+            "direction": "O"
+          },
+          "JUMP_flag": {
+            "direction": "O"
+          },
+          "JUMPC_flag": {
+            "direction": "O"
+          },
+          "CALL_flag": {
+            "direction": "O"
+          },
+          "RET_flag": {
+            "direction": "O"
+          },
+          "czn_o": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "BTNR_1": {
+        "ports": [
+          "BTNR",
+          "led_driver_0/rst",
+          "cputop_0/BTNR"
+        ]
+      },
+      "CLK100MHZ_1": {
+        "ports": [
+          "CLK100MHZ",
+          "led_driver_0/clk",
+          "cputop_0/clk"
+        ]
+      },
+      "SW_1": {
+        "ports": [
+          "SW",
+          "cputop_0/SW"
+        ]
+      },
+      "cputop_0_data_o": {
+        "ports": [
+          "cputop_0/data_o",
+          "led_driver_0/inst"
+        ]
+      },
+      "led_driver_0_an": {
+        "ports": [
+          "led_driver_0/an",
+          "AN"
+        ]
+      },
+      "led_driver_0_ca": {
+        "ports": [
+          "led_driver_0/ca",
+          "CA"
+        ]
+      },
+      "led_driver_0_cb": {
+        "ports": [
+          "led_driver_0/cb",
+          "CB"
+        ]
+      },
+      "led_driver_0_cc": {
+        "ports": [
+          "led_driver_0/cc",
+          "CC"
+        ]
+      },
+      "led_driver_0_cd": {
+        "ports": [
+          "led_driver_0/cd",
+          "CD"
+        ]
+      },
+      "led_driver_0_ce": {
+        "ports": [
+          "led_driver_0/ce",
+          "CE"
+        ]
+      },
+      "led_driver_0_cf": {
+        "ports": [
+          "led_driver_0/cf",
+          "CF"
+        ]
+      },
+      "led_driver_0_cg": {
+        "ports": [
+          "led_driver_0/cg",
+          "CG"
+        ]
+      },
+      "led_driver_0_dp": {
+        "ports": [
+          "led_driver_0/dp",
+          "DP"
+        ]
+      }
+    }
+  }
+}
